@@ -49,11 +49,6 @@ export default function NewNote() {
   function createNote(note) {
     return API.post("notes", "/notes", {
       body: note,
-      //   requestContext: {
-      //     identity: {
-      //       cognitoIdentityId: "USER-SUB-1234",
-      //     },
-      //   },
     });
   }
 
